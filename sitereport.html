@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Report | Sujan Sijapati</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hamburger-menu">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="logo">
+            <h2>Sujan<span>Sijapati</span></h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="videoDemo.html">Video Demo</a></li>
+            <li><a href="sitereport.html" class="active">Site Report</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <input type="checkbox" id="darkmode-toggle">
+            <label for="darkmode-toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </label>
+        </div>
+    </nav>
+
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="videoDemo.html">Video Demo</a></li>
+            <li><a href="sitereport.html" class="active">Site Report</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="page-header">
+            <h1>Site Report</h1>
+            <p>A reflection on my web development journey and the creation of this portfolio</p>
+        </section>
+
+        <section class="sitereport-container">
+            <div class="sitereport-content">
+                <div class="card">
+                    <h2>Development Experience</h2>
+                    <h3>Learning Process</h3>
+                    <p>
+                        My journey in web development began with HTML and CSS fundamentals. The initial challenges were understanding the box model and creating responsive layouts. Then I discovered the goodness of CSS Grid and Flexbox, and layout design was never the same again. I also learned JavaScript to add interactivity and dynamic content to my projects.
+                    </p>
+                    
+                    <h3>Design Decisions</h3>
+                    <p>
+                        For this portfolio, I have chosen a royal color scheme to depict professionalism and creativity. The prominent colors are imperial red to signify energy, regal gold for accentuating, and majestic purple for sophistication. I have employed a clean, contemporary font that offers readability across devices without compromising a professional look.
+                    </p>
+                    
+                    <h3>Technical Implementation</h3>
+                    <p>
+                        I implemented semantic HTML5 elements throughout the site to improve accessibility and SEO. Responsive design was achieved by utilizing CSS Grid for the general layout structure, and media queries to adjust the design to accommodate different screen sizes. The hamburger menu for the mobile design was created using JavaScript to toggle the display of the menu, and animations were added using CSS transitions for a smoother user experience.
+                    </p>
+                    
+                    <h3>Challenges and Solutions</h3>
+                    <p>
+                        One of the main problems was implementing the dark mode toggle. I fixed this by using CSS variables for color and a JavaScript function to switch between dark and light modes. Another problem was making the contact form work with form validation and form submission. I fixed this by implementing comprehensive validation rules and integrating with a form submission service.
+                    </p>
+                    
+                    <h3>AI Integration</h3>
+                    <p>
+                        I added an AI chatbot to enhance user interaction and provide immediate assistance to the visitors of the website. The chatbot is built with JavaScript and has a basic, easy-to-use interface that integrates with the overall design of the website. This feature demonstrates my ability to add modern features that enhance user experience.
+                    </p>
+                    
+                    <h3>Video Demo</h3>
+                    <p>
+                        The video demo of this portfolio can be found on the Video Demo page or directly on 
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">
+                            this YouTube link
+                        </a>.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="sitereport-sidebar">
+                <div class="card">
+                    <h2>Validation Results</h2>
+                    <div class="validation-item">
+                        <h3>HTML Validation</h3>
+                        <div class="validation-image">
+                           <!--  <img src="Image/HTMLValidation.jpg" alt="HTML Validation Screenshot"> -->
+                        </div>
+                        <p>All HTML pages pass W3C validation with no errors.</p>
+                    </div>
+                    
+                    <div class="validation-item">
+                        <h3>CSS Validation</h3>
+                        <div class="validation-image">
+                            <img src="Image/CSSValidation.jpg" alt="CSS Validation Screenshot">
+                        </div>
+                        <p>CSS files pass W3C validation with no errors.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h2>Design Influences</h2>
+                    <p>Websites that influenced my design:</p>
+                    <ul class="influence-list">
+                        <li>
+                            <a href="https://www.awwwards.com" target="_blank" rel="noopener noreferrer">
+                                Awwwards
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">
+                                Dribbble
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net" target="_blank" rel="noopener noreferrer">
+                                Behance
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- AI Chatbox -->
+    <div class="chat-bot">
+        <div class="chat-bot-toggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chat-bot-container">
+            <div class="chat-bot-header">
+                <h3>AI Assistant</h3>
+                <button class="chat-bot-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-bot-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>Hi there! I'm Sujan's AI assistant. How can I help you today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-bot-input">
+                <input type="text" placeholder="Type your message..." id="chat-input">
+                <button id="chat-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> Sujan Sijapati. All rights reserved.</p>
+            <a href="https://sujansijapati.com.np" target="_blank">sujansijapati.com.np</a>
+        </div>
+    </footer>
+
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>

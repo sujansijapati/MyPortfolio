@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Sujan Sijapati</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hamburger-menu">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="logo">
+            <h2>Sujan<span>Sijapati</span></h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="videoDemo.html">Video Demo</a></li>
+            <li><a href="sitereport.html">Site Report</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <input type="checkbox" id="darkmode-toggle">
+            <label for="darkmode-toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </label>
+        </div>
+    </nav>
+
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="videoDemo.html">Video Demo</a></li>
+            <li><a href="sitereport.html">Site Report</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="page-header">
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out to me for any inquiries!</p>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-form-container">
+                <div class="card">
+                    <h2>Don't be shy !</h2>
+                    <p>Feel free to get in touch with me. I'm here and eager to engage in conversation with you!</p>
+
+                    <form class="contactform" action="https://api.web3forms.com/submit" method="POST"
+                      onsubmit="return validateForm()">
+                      <input type="hidden" name="access_key" value="90b38764-9d0f-4674-ae4b-2501b40ecd9f">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name">
+                            <span class="error-message" id="name_error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Your email">
+                            <span class="error-message" id="email_error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact">Contact Number</label>
+                            <input type="text" id="contact" name="contact" placeholder="Your contact number">
+                            <span class="error-message" id="contact_error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message" rows="5"></textarea>
+                            <span class="error-message" id="message_error"></span>
+                        </div>
+                        <button type="submit" class="btn primary-btn">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="contact-info-container">
+                <div class="card contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Here's how you can reach me directly.</p>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info.sujansijapati@gmail.com">info.sujansijapati@gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+447570503962">+44 7570 503962</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Northampton, United Kingdom</span>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39054.05392808228!2d-0.9226908!3d52.2381365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48770ee2fd52b4e5%3A0x3f9568e830d1f8!2sUniversity%20of%20Northampton!5e0!3m2!1sen!2suk!4v1710442305!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- AI Chatbox -->
+    <div class="chat-bot">
+        <div class="chat-bot-toggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chat-bot-container">
+            <div class="chat-bot-header">
+                <h3>AI Assistant</h3>
+                <button class="chat-bot-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-bot-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>Hi there! I'm Sujan's AI assistant. How can I help you today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-bot-input">
+                <input type="text" placeholder="Type your message..." id="chat-input">
+                <button id="chat-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> Sujan Sijapati. All rights reserved.</p>
+            <a href="https://sujansijapati.com.np" target="_blank">sujansijapati.com.np</a>
+        </div>
+    </footer>
+
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>

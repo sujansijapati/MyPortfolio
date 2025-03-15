@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujan Sijapati | Portfolio</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hamburger-menu">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="logo">
+            <h2>Sujan<span>Sijapati</span></h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="videoDemo.html">Video Demo</a></li>
+            <li><a href="sitereport.html">Site Report</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <input type="checkbox" id="darkmode-toggle">
+            <label for="darkmode-toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </label>
+        </div>
+    </nav>
+
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="videoDemo.html">Video Demo</a></li>
+            <li><a href="sitereport.html">Site Report</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="animate-text">Hi, I'm <span>Sujan Sijapati</span></h1>
+                    <p class="animate-text delay-1">Web Developer & Cyber Security Student</p>
+                    <p class="bio animate-text delay-2">Originally from Kathmandu, Nepal, now in Northampton, UK, I’m studying BSc (Hons) Web Development and Cyber Security at the University of Northampton. I’m passionate about creating secure, user-friendly, and visually appealing web experiences.</p>
+                    <div class="cta-buttons animate-text delay-3">
+                        <a href="projects.html" class="btn primary-btn">View My Work</a>
+                        <a href="contact.html" class="btn secondary-btn">Contact Me</a>
+                    </div>
+                    <div class="social-icons animate-text delay-4">
+                        <a href="https://facebook.com/sujansijapatii" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/sujan_sijapati" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/sujan_sijapati" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/sujansijapati" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/sujansijapati" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image animate-fade-in">
+                    <div class="profile-container">
+                        <div class="profile-circle">
+                            <img src="Image/sujansijapati.jpg" alt="Sujan Sijapati">
+                        </div>
+                        <div class="profile-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- AI Chatbox -->
+    <div class="chat-bot">
+        <div class="chat-bot-toggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chat-bot-container">
+            <div class="chat-bot-header">
+                <h3>AI Assistant</h3>
+                <button class="chat-bot-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-bot-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>Hi there! I'm Sujan's AI assistant. How can I help you today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-bot-input">
+                <input type="text" placeholder="Type your message..." id="chat-input">
+                <button id="chat-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> Sujan Sijapati. All rights reserved.</p>
+            <a href="https://sujansijapati.com.np" target="_blank">sujansijapati.com.np</a>
+        </div>
+    </footer>
+
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Sujan Sijapati</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hamburger-menu">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="logo">
+            <h2>Sujan<span>Sijapati</span></h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="videoDemo.html">Video Demo</a></li>
+            <li><a href="sitereport.html">Site Report</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <input type="checkbox" id="darkmode-toggle">
+            <label for="darkmode-toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </label>
+        </div>
+    </nav>
+
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="videoDemo.html">Video Demo</a></li>
+            <li><a href="sitereport.html">Site Report</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="page-header">
+            <h1>My Projects</h1>
+            <p>A collection of my work and projects from various modules</p>
+        </section>
+
+        <section class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Image/web.jpg" alt="Web Development Project">
+                </div>
+                <div class="project-content">
+                    <h3>Web Development Project</h3>
+                    <p>Coming Soon</p>
+                    <a href="#" class="btn outline-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Image/cs.jpg" alt="Cyber Security Analysis">
+                </div>
+                <div class="project-content">
+                    <h3>Cyber Security Analysis</h3>
+                    <p>coming Soon</p>
+                    <a href="#" class="btn outline-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Image/mobile.jpg" alt="Mobile Application">
+                </div>
+                <div class="project-content">
+                    <h3>Mobile Application</h3>
+                    <p>Coming Soon</p>
+                    <a href="#" class="btn outline-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Image/ecom.jpg" alt="E-commerce Platform">
+                </div>
+                <div class="project-content">
+                    <h3>E-commerce Platform</h3>
+                    <p>Coming Soon</p>
+                    <a href="#" class="btn outline-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Image/portfolio.jpg" alt="Portfolio Website">
+                </div>
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>Coming Soon</p>
+                    <a href="https://sujansijapati.com.np" class="btn outline-btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Image/datavisual.jpg" alt="Data Visualization">
+                </div>
+                <div class="project-content">
+                    <h3>Data Visualization</h3>
+                    <p>Coming Soon</p>
+                    <a href="#" class="btn outline-btn">View Details</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- AI Chatbox -->
+    <div class="chat-bot">
+        <div class="chat-bot-toggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chat-bot-container">
+            <div class="chat-bot-header">
+                <h3>AI Assistant</h3>
+                <button class="chat-bot-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-bot-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>Hi there! I'm Sujan's AI assistant. How can I help you today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-bot-input">
+                <input type="text" placeholder="Type your message..." id="chat-input">
+                <button id="chat-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> Sujan Sijapati. All rights reserved.</p>
+            <a href="https://sujansijapati.com.np" target="_blank">sujansijapati.com.np</a>
+        </div>
+    </footer>
+
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
